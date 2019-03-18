@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import profile from './assets/profiles.jpeg';
+import Title from './title';
 
 class App extends Component {
     state = { displayBio: false };
-    // constructor() {
-    //     super();
-    //     this.state = { displayBio: false };
-    //     this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-    // }
     toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio });
     }
@@ -18,8 +14,10 @@ class App extends Component {
             <div>
                 <img src={profile} alt='profile' className="profile" />
                 <h1>Hello!</h1>
-                <p>My name is Mehul. I'm a Software Engineer.</p>
+                <p>My name is Mehul Mandviya.</p>
+                <Title />
                 <p>I'm always looking forward to working on meaningful projects.</p>
+
                 {this.state.displayBio ? (<div>
                     <p>
                         I Live in San Francisco, and code every day.
