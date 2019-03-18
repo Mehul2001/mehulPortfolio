@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
-import profile from './assets/profiles.jpeg';
+import profile from '../assets/profiles.jpeg';
 import Title from './title';
 
 class App extends Component {
@@ -40,8 +40,6 @@ class App extends Component {
 
             </div>
         )
-
-
     }
 }
 
